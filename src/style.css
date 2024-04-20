@@ -1,0 +1,89 @@
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+.poppins-400 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.poppins-600 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.open-400 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--Violet);
+  background-image: url("../images/bg-desktop.svg");
+  background-size: cover;
+  padding: 30px 40px;
+}
+header {
+  height: 10%;
+  > img {
+    width: 200px;
+  }
+}
+main {
+  display: flex;
+  align-items: center;
+  height: calc(100% - (10% + 30px));
+  > img {
+    width: 40%;
+  }
+  aside {
+    margin-left: 10%;
+    width: 40%;
+    h1 {
+      font-size: 2.1rem;
+      color: white;
+    }
+    p {
+      margin-block: 20px;
+      color: white;
+    }
+    button {
+      cursor: pointer;
+      outline: none;
+      border: none;
+      width: 150px;
+      height: 40px;
+      color: var(--Violet);
+      background-color: white;
+      border-radius: 30px;
+      box-shadow: 2px 2px 10px 4px rgb(78, 29, 78);
+      &:hover {
+        transition: 0.3s;
+        background-color: var(--Soft-Magenta);
+        color: white;
+      }
+    }
+  }
+}
+div:last-of-type {
+  position: absolute;
+  bottom: 70px;
+  right: 200px;
+  svg {
+    cursor: pointer;
+    font-size: large;
+    margin-left: 10px;
+    border-radius: 50%;
+    padding: 10px;
+    border: solid 1px white;
+    &:hover {
+      transition: 0.3s;
+      color: var(--Soft-Magenta);
+      border-color: var(--Soft-Magenta);
+    }
+  }
+}
